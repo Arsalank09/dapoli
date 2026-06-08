@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>65 Acres in Dapoli, Ratnagiri &mdash; The Mahabaleshwar of Konkan</title>
+<meta name="description" content="A premium 65.14-acre freehold land parcel in Dapoli, Ratnagiri, Maharashtra. 1.5 km from Dapoli city, 6 km from the coast. Clear title, NA-converted entrance, sanctioned layout." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --forest:#1c3b2e;
+    --forest-deep:#122619;
+    --laterite:#9a4a2e;
+    --terra:#b8623c;
+    --gold:#c9a24b;
+    --gold-soft:#d8be86;
+    --cream:#f5efe2;
+    --ivory:#fbf8f0;
+    --ink:#21271f;
+    --muted:#5e6657;
+    --line:rgba(28,59,46,.16);
+    --shadow:0 30px 80px -30px rgba(18,38,25,.45);
+    --serif:'Cormorant Garamond', Georgia, serif;
+    --sans:'Outfit', system-ui, sans-serif;
+  }
+
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:var(--sans);
+    background:var(--ivory);
+    color:var(--ink);
+    font-weight:300;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  ::selection{background:var(--gold);color:var(--forest-deep)}
+
+  img{display:block;max-width:100%}
+  a{color:inherit;text-decoration:none}
+
+  .wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+  .eyebrow{
+    font-size:.72rem;letter-spacing:.42em;text-transform:uppercase;
+    font-weight:500;color:var(--gold);
+  }
+  h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.04;letter-spacing:-.01em}
+
+  /* ---------- NAV ---------- */
+  nav{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:18px 40px;transition:.45s ease;
+    mix-blend-mode:normal;
+  }
+  nav.scrolled{
+    background:rgba(251,248,240,.86);
+    backdrop-filter:blur(14px);
+    box-shadow:0 1px 0 var(--line);
+  }
+  nav .brand{font-family:var(--serif);font-size:1.32rem;letter-spacing:.02em;color:#fff;transition:.4s}
+  nav.scrolled .brand{color:var(--forest)}
+  nav .brand b{color:var(--gold);font-weight:600}
+  nav .links{display:flex;gap:30px;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.82);font-weight:400}
+  nav.scrolled .links{color:var(--muted)}
+  nav .links a{position:relative;transition:.3s}
+  nav .links a:hover{color:var(--gold)}
+  nav .links a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:1px;background:var(--gold);transition:.35s}
+  nav .links a:hover::after{width:100%}
+  @media(max-width:880px){nav .links{display:none}}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;min-height:100vh;display:flex;align-items:flex-end;
+    overflow:hidden;
+  }
+  .hero-bg{position:absolute;inset:0;z-index:0}
+  .hero-bg img{width:100%;height:100%;object-fit:cover;transform:scale(1.08);animation:slowzoom 18s ease-out forwards}
+  @keyframes slowzoom{to{transform:scale(1)}}
+  .hero::after{
+    content:"";position:absolute;inset:0;z-index:1;
+    background:linear-gradient(180deg,rgba(18,38,25,.55) 0%,rgba(18,38,25,.15) 35%,rgba(18,38,25,.65) 100%);
+  }
+  .hero-inner{position:relative;z-index:2;width:100%;padding-bottom:8vh}
+  .hero .eyebrow{animation:rise .9s .2s both}
+  .hero h1{
+    color:#fff;font-size:clamp(3.2rem,9vw,8.2rem);margin:.18em 0 .25em;
+    text-shadow:0 4px 40px rgba(0,0,0,.35);
+  }
+  .hero h1 .small{display:block;font-size:.34em;letter-spacing:.32em;text-transform:uppercase;font-family:var(--sans);font-weight:300;color:var(--gold-soft);margin-bottom:.5em}
+  .hero h1 .place{font-style:italic;color:var(--gold)}
+  .hero .lede{color:rgba(255,255,255,.9);max-width:560px;font-size:1.12rem;font-weight:300;animation:rise 1s .55s both}
+  .hero .scroll-cue{position:absolute;right:40px;bottom:8vh;z-index:2;color:rgba(255,255,255,.7);font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;writing-mode:vertical-rl;display:flex;align-items:center;gap:14px}
+  .hero .scroll-cue::after{content:"";width:1px;height:60px;background:linear-gradient(var(--gold),transparent);animation:pulse 2s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:.3}50%{opacity:1}}
+  @keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+  .hero h1 .small,.hero h1 .place,.hero h1 .ln{animation:rise .9s both}
+  .hero h1 .ln{display:block;animation-delay:.35s}
+  .hero h1 .small{animation-delay:.1s}
+
+  /* quick stats bar under hero */
+  .statbar{background:var(--forest-deep);color:var(--cream)}
+  .statbar .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;padding:0}
+  .statbar .cell{padding:38px 28px;border-left:1px solid rgba(255,255,255,.08);text-align:center}
+  .statbar .cell:first-child{border-left:0}
+  .statbar .num{font-family:var(--serif);font-size:2.6rem;color:var(--gold);line-height:1}
+  .statbar .lab{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(245,239,226,.65);margin-top:10px}
+  @media(max-width:780px){.statbar .wrap{grid-template-columns:repeat(2,1fr)}.statbar .cell:nth-child(3){border-left:0}}
+
+  /* ---------- SECTIONS ---------- */
+  section{position:relative}
+  .pad{padding:120px 0}
+  .pad-sm{padding:80px 0}
+  .section-head{max-width:720px;margin-bottom:64px}
+  .section-head h2{font-size:clamp(2.4rem,5vw,4rem);margin:.2em 0 .3em;color:var(--forest)}
+  .section-head p{color:var(--muted);font-size:1.08rem;max-width:560px}
+  .reveal{opacity:0;transform:translateY(40px);transition:.9s cubic-bezier(.22,.61,.36,1)}
+  .reveal.in{opacity:1;transform:none}
+
+  /* INDEX */
+  .index-sec{background:var(--cream)}
+  .index-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0 56px}
+  @media(max-width:760px){.index-grid{grid-template-columns:1fr}}
+  .idx{display:flex;gap:22px;align-items:baseline;padding:20px 0;border-bottom:1px solid var(--line);transition:.35s;cursor:pointer}
+  .idx:hover{padding-left:12px}
+  .idx .pg{font-family:var(--serif);font-size:1.5rem;color:var(--gold);min-width:54px;font-style:italic}
+  .idx .t{font-size:1.02rem;color:var(--ink);font-weight:400}
+  .idx:hover .t{color:var(--forest)}
+
+  /* ABOUT split */
+  .split{display:grid;grid-template-columns:1.05fr .95fr;gap:0;align-items:stretch}
+  @media(max-width:900px){.split{grid-template-columns:1fr}}
+  .split .media{position:relative;min-height:480px;overflow:hidden}
+  .split .media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .split .body{padding:84px 72px;display:flex;flex-direction:column;justify-content:center}
+  @media(max-width:560px){.split .body{padding:56px 32px}}
+  .split.dark{background:var(--forest)}
+  .split.dark .body{color:var(--cream)}
+  .split.dark h2{color:#fff}
+  .split.dark .eyebrow{color:var(--gold-soft)}
+  .feat-list{list-style:none;margin-top:18px}
+  .feat-list li{position:relative;padding:15px 0 15px 34px;border-bottom:1px solid var(--line);font-size:1.02rem}
+  .split.dark .feat-list li{border-color:rgba(255,255,255,.12)}
+  .feat-list li::before{content:"";position:absolute;left:0;top:24px;width:16px;height:1px;background:var(--gold)}
+  .feat-list strong{font-weight:500;color:var(--gold)}
+  .split.dark .feat-list strong{color:var(--gold-soft)}
+
+  /* STATUS cards */
+  .status-sec{background:var(--ivory)}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  @media(max-width:860px){.cards{grid-template-columns:1fr}}
+  .card{background:#fff;border:1px solid var(--line);border-radius:4px;padding:40px 34px;box-shadow:var(--shadow);transition:.5s}
+  .card:hover{transform:translateY(-8px)}
+  .card .big{font-family:var(--serif);font-size:3.2rem;color:var(--terra);line-height:1}
+  .card h3{font-size:1.35rem;color:var(--forest);margin:14px 0 10px}
+  .card p{color:var(--muted);font-size:.96rem}
+  .card .tag{display:inline-block;margin-top:18px;font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;padding:6px 12px;border-radius:2px;font-weight:500}
+  .tag.done{background:rgba(28,59,46,.1);color:var(--forest)}
+  .tag.proc{background:rgba(184,98,60,.14);color:var(--terra)}
+  .tag.later{background:rgba(201,162,75,.18);color:#8a6c1f}
+
+  .ownership{margin-top:56px;background:var(--forest-deep);color:var(--cream);padding:48px 56px;border-radius:4px;display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center}
+  @media(max-width:720px){.ownership{grid-template-columns:1fr;padding:40px 32px}}
+  .ownership h3{color:#fff;font-size:1.7rem}
+  .ownership p{color:rgba(245,239,226,.7);max-width:520px;margin-top:8px;font-size:.98rem}
+  .owners{display:flex;gap:14px;flex-wrap:wrap}
+  .owner{text-align:center;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);padding:18px 22px;border-radius:4px;min-width:130px}
+  .owner .nm{font-family:var(--serif);font-size:1.12rem;color:#fff}
+  .owner .pct{font-size:.74rem;letter-spacing:.18em;color:var(--gold);margin-top:4px}
+
+  /* USP banner */
+  .usp{position:relative;color:#fff;text-align:center;overflow:hidden}
+  .usp-bg{position:absolute;inset:0;z-index:0}
+  .usp-bg img{width:100%;height:100%;object-fit:cover;filter:brightness(.42)}
+  .usp .wrap{position:relative;z-index:2;padding:140px 32px}
+  .usp h2{font-size:clamp(2.2rem,4.6vw,3.6rem);max-width:780px;margin:0 auto .4em}
+  .usp p{color:rgba(255,255,255,.82);max-width:560px;margin:0 auto 36px}
+
+  /* buttons */
+  .btn{
+    display:inline-flex;align-items:center;gap:12px;
+    font-family:var(--sans);font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;font-weight:500;
+    padding:16px 34px;border-radius:2px;transition:.4s;cursor:pointer;border:1px solid transparent;
+  }
+  .btn .ar{transition:.4s}
+  .btn:hover .ar{transform:translateX(6px)}
+  .btn-gold{background:var(--gold);color:var(--forest-deep)}
+  .btn-gold:hover{background:var(--gold-soft)}
+  .btn-out{border-color:rgba(255,255,255,.5);color:#fff}
+  .btn-out:hover{background:#fff;color:var(--forest)}
+  .btn-forest{background:var(--forest);color:var(--cream)}
+  .btn-forest:hover{background:var(--forest-deep)}
+
+  /* LOCATION */
+  .loc-sec{background:var(--cream)}
+  .loc-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:start}
+  @media(max-width:900px){.loc-grid{grid-template-columns:1fr}}
+  .loc-map{border-radius:4px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
+  .loc-map img{width:100%;height:auto}
+  .loc-cap{font-size:.8rem;color:var(--muted);padding:14px 18px;background:#fff;letter-spacing:.02em}
+  .coords{background:#fff;border:1px solid var(--line);border-radius:4px;padding:34px;box-shadow:var(--shadow)}
+  .coords .row{padding:18px 0;border-bottom:1px solid var(--line)}
+  .coords .row:last-child{border-bottom:0;padding-bottom:0}
+  .coords .k{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:500}
+  .coords .v{font-size:1.02rem;margin-top:6px;color:var(--ink)}
+  .coords .v.mono{font-family:var(--serif);font-size:1.3rem;font-style:italic;color:var(--forest)}
+
+  /* AERIAL full bleed */
+  .aerial{position:relative}
+  .aerial img{width:100%;height:auto;display:block}
+  .aerial .tagline{position:absolute;left:40px;bottom:40px;color:#fff;z-index:2;text-shadow:0 2px 20px rgba(0,0,0,.6)}
+  .aerial .tagline .eyebrow{color:var(--gold-soft)}
+  .aerial .tagline h3{font-size:clamp(1.8rem,4vw,3rem);color:#fff;margin-top:6px}
+
+  /* GALLERY */
+  .gal-sec{background:var(--forest-deep)}
+  .gal-sec .section-head h2{color:#fff}
+  .gal-sec .section-head p{color:rgba(245,239,226,.7)}
+  .gal-sec .eyebrow{color:var(--gold-soft)}
+  .gallery{columns:3;column-gap:18px}
+  @media(max-width:860px){.gallery{columns:2}}
+  @media(max-width:520px){.gallery{columns:1}}
+  .gallery figure{break-inside:avoid;margin:0 0 18px;border-radius:4px;overflow:hidden;position:relative;cursor:pointer}
+  .gallery img{width:100%;transition:.7s ease;filter:saturate(1.02)}
+  .gallery figure:hover img{transform:scale(1.06)}
+  .gallery figure::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 60%,rgba(18,38,25,.5));opacity:0;transition:.4s}
+  .gallery figure:hover::after{opacity:1}
+
+  /* LAYOUT / docs */
+  .docs-sec{background:var(--ivory)}
+  .layout-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  @media(max-width:840px){.layout-grid{grid-template-columns:1fr}}
+  .doc-btns{display:flex;flex-direction:column;gap:14px;margin-top:24px}
+  .doc-btn{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:20px 26px;background:#fff;border:1px solid var(--line);border-radius:4px;transition:.4s}
+  .doc-btn:hover{border-color:var(--gold);transform:translateX(6px);box-shadow:var(--shadow)}
+  .doc-btn .lbl{font-size:1rem;color:var(--forest);font-weight:400}
+  .doc-btn .sub{font-size:.78rem;color:var(--muted)}
+  .doc-btn .go{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:500;white-space:nowrap}
+
+  /* 7/12 extract table */
+  .extract-sec{background:var(--cream)}
+  .extract-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  @media(max-width:840px){.extract-grid{grid-template-columns:1fr}}
+  .ext-col{background:#fff;border:1px solid var(--line);border-radius:4px;overflow:hidden;box-shadow:var(--shadow)}
+  .ext-col .hd{background:var(--forest);color:#fff;padding:20px 24px}
+  .ext-col .hd .ac{font-family:var(--serif);font-size:1.9rem;color:var(--gold-soft)}
+  .ext-col .hd .ds{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-top:2px}
+  .ext-col ul{list-style:none}
+  .ext-col li a,.ext-col li span{display:flex;align-items:center;justify-content:space-between;padding:15px 24px;border-bottom:1px solid var(--line);font-size:.95rem;transition:.3s}
+  .ext-col li:last-child a,.ext-col li:last-child span{border-bottom:0}
+  .ext-col li a:hover{background:var(--cream);padding-left:30px}
+  .ext-col li a .open{font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:500}
+  .ext-col li span{color:var(--muted)}
+
+  .legal-note{margin-top:48px;display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;background:#fff;border:1px solid var(--line);border-left:3px solid var(--gold);padding:36px 40px;border-radius:4px}
+  @media(max-width:640px){.legal-note{grid-template-columns:1fr;padding:30px 28px}}
+  .legal-note .seal{font-family:var(--serif);font-size:3.4rem;color:var(--gold);line-height:1}
+  .legal-note h3{color:var(--forest);font-size:1.5rem}
+  .legal-note p{color:var(--muted);margin-top:6px;font-size:.98rem}
+  .legal-note .ll{display:flex;gap:14px;margin-top:16px;flex-wrap:wrap}
+
+  /* ASSURANCE */
+  .assure-sec{background:var(--forest)}
+  .assure-sec .section-head h2{color:#fff}
+  .assure-sec .eyebrow{color:var(--gold-soft)}
+  .assure-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.1);border-radius:4px;overflow:hidden}
+  @media(max-width:780px){.assure-grid{grid-template-columns:1fr}}
+  .assure{background:var(--forest);padding:44px 38px;color:var(--cream)}
+  .assure h3{color:#fff;font-size:1.4rem;margin-bottom:12px}
+  .assure h3 span{color:var(--gold);font-style:italic}
+  .assure p{color:rgba(245,239,226,.72);font-size:.96rem}
+  .assure .lk{display:inline-block;margin-top:18px;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-soft);border-bottom:1px solid rgba(216,190,134,.4);padding-bottom:3px;transition:.3s}
+  .assure .lk:hover{color:#fff;border-color:#fff}
+
+  /* CTA / footer */
+  .cta{position:relative;text-align:center;color:#fff;overflow:hidden}
+  .cta-bg{position:absolute;inset:0;z-index:0}
+  .cta-bg img{width:100%;height:100%;object-fit:cover;filter:brightness(.4)}
+  .cta .wrap{position:relative;z-index:2;padding:150px 32px}
+  .cta h2{font-size:clamp(2.6rem,6vw,5rem);margin-bottom:.3em}
+  .cta h2 i{color:var(--gold);font-weight:500}
+  .cta p{color:rgba(255,255,255,.84);max-width:520px;margin:0 auto 38px;font-size:1.1rem}
+  .cta-btns{display:flex;gap:18px;justify-content:center;flex-wrap:wrap}
+
+  footer{background:var(--forest-deep);color:rgba(245,239,226,.6);padding:60px 0 40px}
+  footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+  @media(max-width:760px){footer .wrap{grid-template-columns:1fr}}
+  footer .brand{font-family:var(--serif);font-size:1.6rem;color:#fff}
+  footer .brand b{color:var(--gold)}
+  footer h4{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-soft);margin-bottom:16px;font-weight:500}
+  footer a,footer p{font-size:.92rem;line-height:2;color:rgba(245,239,226,.66)}
+  footer a:hover{color:var(--gold)}
+  .footer-bot{border-top:1px solid rgba(255,255,255,.1);margin-top:48px;padding-top:24px;text-align:center;font-size:.78rem;letter-spacing:.04em;color:rgba(245,239,226,.4)}
+  .footer-bot .reg{color:var(--gold-soft);font-family:var(--serif);font-style:italic;font-size:.95rem}
+
+  /* lightbox */
+  .lb{position:fixed;inset:0;z-index:200;background:rgba(10,18,12,.94);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:.4s;padding:40px}
+  .lb.open{opacity:1;pointer-events:auto}
+  .lb img{max-width:92vw;max-height:88vh;border-radius:4px;box-shadow:0 40px 120px rgba(0,0,0,.6)}
+  .lb .x{position:absolute;top:28px;right:36px;color:#fff;font-size:2rem;cursor:pointer;font-family:var(--serif);opacity:.7;transition:.3s}
+  .lb .x:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="brand">Dapoli&nbsp;<b>65</b></div>
+  <div class="links">
+    <a href="#about">About</a>
+    <a href="#parcel">The Parcel</a>
+    <a href="#location">Location</a>
+    <a href="#gallery">Site</a>
+    <a href="#documents">Documents</a>
+    <a href="#contact">Enquire</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="hero-bg"><img src="assets/image2.jpg" alt="Coastal hills of Dapoli meeting the Arabian Sea" /></div>
+  <div class="hero-inner">
+    <div class="wrap">
+      <span class="eyebrow">Dapoli &middot; Ratnagiri &middot; Maharashtra</span>
+      <h1>
+        <span class="small">The Mahabaleshwar of Konkan</span>
+        <span class="ln">A Premium</span>
+        <span class="place">65&#8209;Acre</span> Land Parcel
+      </h1>
+      <p class="lede">A rare freehold estate where the Sahyadri hills fall away to a 50&nbsp;km Konkan seaboard &mdash; 1.5&nbsp;km from Dapoli city, moments from the coast.</p>
+    </div>
+  </div>
+  <div class="scroll-cue">Scroll</div>
+</header>
+
+<!-- STAT BAR -->
+<section class="statbar">
+  <div class="wrap">
+    <div class="cell"><div class="num">65.14</div><div class="lab">Acres &middot; Freehold</div></div>
+    <div class="cell"><div class="num">1.5</div><div class="lab">KM from City Centre</div></div>
+    <div class="cell"><div class="num">6</div><div class="lab">KM to the Beach</div></div>
+    <div class="cell"><div class="num">100%</div><div class="lab">Clear &amp; Marketable Title</div></div>
+  </div>
+</section>
+
+<!-- INDEX -->
+<section class="index-sec pad" id="index">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Presentation Index</span>
+      <h2>What this dossier covers</h2>
+      <p>Every section of the original presentation, preserved &mdash; from the land&rsquo;s story to its legal records and live document links.</p>
+    </div>
+    <div class="index-grid reveal">
+      <a class="idx" href="#about"><span class="pg">01</span><span class="t">About Dapoli</span></a>
+      <a class="idx" href="#parcel"><span class="pg">02</span><span class="t">About the Land Parcel</span></a>
+      <a class="idx" href="#usp"><span class="pg">03</span><span class="t">Diagrammatic Presentation &amp; USP</span></a>
+      <a class="idx" href="#location"><span class="pg">04</span><span class="t">Location &amp; Co-ordinates</span></a>
+      <a class="idx" href="#gallery"><span class="pg">05</span><span class="t">Actual Site Images</span></a>
+      <a class="idx" href="#documents"><span class="pg">06</span><span class="t">Plot Layout</span></a>
+      <a class="idx" href="#extract"><span class="pg">07</span><span class="t">7/12 Extract &amp; Legal Reports</span></a>
+      <a class="idx" href="#assurance"><span class="pg">08</span><span class="t">Encumbrance &amp; Approvals Confirmation</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT DAPOLI -->
+<section class="split" id="about">
+  <div class="media"><img src="assets/image25.jpg" alt="Rolling open land under a wide Konkan sky" /></div>
+  <div class="body reveal">
+    <span class="eyebrow">01 &middot; About Dapoli</span>
+    <h2 style="font-size:clamp(2.2rem,4vw,3.4rem);margin:.2em 0 .5em;color:var(--forest)">A coastal hill station<br>steeped in history</h2>
+    <ul class="feat-list">
+      <li>A town in <strong>Ratnagiri district, Maharashtra</strong> &mdash; and a celebrated coastal hill station.</li>
+      <li>Once <strong>&ldquo;Camp Dapoli,&rdquo;</strong> where the British set their cantonment camps.</li>
+      <li>Separated from the <strong>Sahyadri range</strong> &mdash; bordered by Khed to the east, Mandangad to the north, Guhaghar &amp; Chiplun to the south, and the <strong>Arabian Sea</strong> to the west.</li>
+      <li>Blessed with a sweeping <strong>50 km seaboard</strong>.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ABOUT PARCEL -->
+<section class="split dark" id="parcel">
+  <div class="body reveal">
+    <span class="eyebrow">02 &middot; About the Land Parcel</span>
+    <h2 style="font-size:clamp(2.2rem,4vw,3.4rem);margin:.2em 0 .5em">Wall-touched to the<br>landmarks that matter</h2>
+    <ul class="feat-list">
+      <li><strong>1.5 KM</strong> from the City Centre.</li>
+      <li>Wall-touched to one of India&rsquo;s biggest agricultural universities &mdash; <strong>Dr. Balasaheb Sawant Konkan Krishi Vidyapeeth</strong>.</li>
+      <li>By road, wall-touched to the three-star <strong>Hotel Sadhna Executive</strong>.</li>
+      <li>The four-star <strong>Hotel The Fern Samali</strong> lies just 1.5 km beyond the project.</li>
+      <li>Beach-side areas are about <strong>6 KM away</strong>.</li>
+    </ul>
+  </div>
+  <div class="media"><img src="assets/image11.jpg" alt="Satellite map showing the marked 65-acre parcel near Hotel Sadhna and Fern Samali" /></div>
+</section>
+
+<!-- STATUS / NA -->
+<section class="status-sec pad" id="status">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Land Status</span>
+      <h2>65.14 acres, transparently staged</h2>
+      <p>The Non-Agricultural (N.A.) conversion status of the parcel, exactly as it stands today.</p>
+    </div>
+    <div class="cards">
+      <div class="card reveal">
+        <div class="big">7.73</div>
+        <h3>Acres at the Entrance</h3>
+        <p>Converted to Non-Agricultural (N.A.) with a sanctioned layout at the front of the project.</p>
+        <span class="tag done">N.A. Converted</span>
+      </div>
+      <div class="card reveal">
+        <div class="big">34</div>
+        <h3>Acres In Process</h3>
+        <p>Documents are currently under process for N.A. conversion.</p>
+        <span class="tag proc">Under Process</span>
+      </div>
+      <div class="card reveal">
+        <div class="big">23.41</div>
+        <h3>Acres Balance</h3>
+        <p>N.A. procedures will follow in a later phase; MOU signed on this land.</p>
+        <span class="tag later">Phased / MOU Signed</span>
+      </div>
+    </div>
+
+    <div class="ownership reveal">
+      <div>
+        <h3>Entirely freehold</h3>
+        <p>The whole estate is freehold and owned in the individual names of the land owners.</p>
+      </div>
+      <div class="owners">
+        <div class="owner"><div class="nm">Mohammad Naeem<br>Abdul Hamid Khan</div><div class="pct">50%</div></div>
+        <div class="owner"><div class="nm">Narendra Doke</div><div class="pct">25%</div></div>
+        <div class="owner"><div class="nm">Dayanand Vernekar</div><div class="pct">25%</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- USP banner -->
+<section class="usp" id="usp">
+  <div class="usp-bg"><img src="assets/image18.jpg" alt="Developed internal road through the laterite site" /></div>
+  <div class="wrap reveal">
+    <span class="eyebrow">03 &middot; Diagrammatic Presentation &amp; USP</span>
+    <h2>Why this parcel stands apart in the whole of Konkan</h2>
+    <p>A diagrammatic representation of every nearby location surrounding the 65.14-acre parcel &mdash; and the unique selling points that define it.</p>
+    <a class="btn btn-gold" href="https://drive.google.com/file/d/1WFOXRMLLLLznZKbWMLcpzlYchobBRglP/view?usp=sharing" target="_blank" rel="noopener">View the USP Document <span class="ar">&rarr;</span></a>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="loc-sec pad" id="location">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">04 &middot; Location &amp; Co-ordinates</span>
+      <h2>Pinned to the map</h2>
+      <p>A diagrammatic representation of nearby locations, with exact co-ordinates and the precise address of the parcel.</p>
+    </div>
+    <div class="loc-grid">
+      <div class="loc-map reveal">
+        <img src="assets/image11.jpg" alt="Google My Maps view with the colour-marked 65-acre parcel boundaries" />
+        <div class="loc-cap">Marked parcel boundaries &mdash; beside Hotel Sadhana Executive, near Konkan Krishi Vidyapeeth, with The Fern Samali Resort to the south.</div>
+      </div>
+      <div class="coords reveal">
+        <div class="row">
+          <div class="k">Google Pin Co-ordinates</div>
+          <div class="v mono">17&deg;44&rsquo;46.4&rdquo;N&nbsp; 73&deg;10&rsquo;16.5&rdquo;E</div>
+        </div>
+        <div class="row">
+          <div class="k">Exact Address</div>
+          <div class="v">Shiv Shakti Stop, next to Konkan Krishi Vidhyapith, beside Hotel Sadhna Executive, Burondi Road, Gave, Dapoli, Maharashtra &mdash; 415&nbsp;712</div>
+        </div>
+        <div class="row">
+          <div class="k">Landmark</div>
+          <div class="v">Beside Hotel Sadhna Executive</div>
+        </div>
+        <div class="row">
+          <div class="k">Access &amp; Proximity</div>
+          <div class="v">Touched to Burondi Road &middot; 1.5 KM from City Centre &middot; Burondi Road, Ghave, Dapoli</div>
+        </div>
+        <div class="row" style="padding-top:24px">
+          <a class="btn btn-forest" href="https://maps.app.goo.gl/R71p5Qh2m9pV72qQ7" target="_blank" rel="noopener">Open in Google Maps <span class="ar">&rarr;</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AERIAL full-bleed -->
+<section class="aerial">
+  <img src="assets/image16.jpg" alt="Aerial drone view with the 65-acre parcel outlined and all surrounding landmarks labelled" />
+  <div class="tagline">
+    <span class="eyebrow">Aerial View</span>
+    <h3>65 acres, seen from above</h3>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gal-sec pad" id="gallery">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">05 &middot; Actual Site Images</span>
+      <h2>On the ground at Dapoli</h2>
+      <p>Real, unretouched photographs from the site &mdash; the entrance archway, internal roads, demarcated plots and plantings.</p>
+    </div>
+    <div class="gallery">
+      <figure class="reveal"><img src="assets/image10.png" alt="Entrance archway and internal road of the project" loading="lazy" /></figure>
+      <figure class="reveal"><img src="assets/image18.jpg" alt="Laterite internal road rising through the site" loading="lazy" /></figure>
+      <figure class="reveal"><img src="assets/image20.jpg" alt="Tree-lined internal road with project gate" loading="lazy" /></figure>
+      <figure class="reveal"><img src="assets/image19.jpg" alt="Young saplings planted along the plot boundary" loading="lazy" /></figure>
+      <figure class="reveal"><img src="assets/image21.jpg" alt="Wide internal road with retaining walls" loading="lazy" /></figure>
+      <figure class="reveal"><img src="assets/image22.jpg" alt="Demarcated plots with laterite retaining walls and hills beyond" loading="lazy" /></figure>
+      <figure class="reveal"><img src="assets/image23.jpg" alt="Terraced plots stepping down the hillside" loading="lazy" /></figure>
+      <figure class="reveal"><img src="assets/image24.jpg" alt="Plotted land with retaining walls and forest backdrop" loading="lazy" /></figure>
+    </div>
+  </div>
+</section>
+
+<!-- LAYOUT / DOCUMENTS -->
+<section class="docs-sec pad" id="documents">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">06 &middot; Plot Layout</span>
+      <h2>The sanctioned layout</h2>
+      <p>From the total land, 7.73 acres are N.A.-converted with a sanctioned layout; 34 acres are under N.A. process and 23.41 acres are MOU-signed.</p>
+    </div>
+    <div class="layout-grid">
+      <div class="loc-map reveal">
+        <img src="assets/image25.jpg" alt="Open land earmarked for the sanctioned plot layout" />
+        <div class="loc-cap">7.73 acres N.A.-converted with sanctioned layout &middot; 34 acres under N.A. process &middot; 23.41 acres MOU-signed.</div>
+      </div>
+      <div class="reveal">
+        <h3 style="color:var(--forest);font-size:1.9rem">Layout &amp; status documents</h3>
+        <p style="color:var(--muted);margin-top:10px">The original live links, preserved exactly as shared.</p>
+        <div class="doc-btns">
+          <a class="doc-btn" href="https://drive.google.com/file/d/1pwhnr0wUzZg4zCzztNDXNQdggTPagrmj/view?usp=sharing" target="_blank" rel="noopener">
+            <span><span class="lbl">Sanctioned Layout</span><br><span class="sub">For the 7.73 acres</span></span>
+            <span class="go">Open &rarr;</span>
+          </a>
+          <a class="doc-btn" href="https://drive.google.com/file/d/1BANGhK1hoC57qIIiF5JQUXxog2WQw8cj/view?usp=sharing" target="_blank" rel="noopener">
+            <span><span class="lbl">N.A. Status</span><br><span class="sub">For the 34 acres</span></span>
+            <span class="go">Open &rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7/12 EXTRACT -->
+<section class="extract-sec pad" id="extract">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">07 &middot; Property Card &mdash; 7/12 Extract</span>
+      <h2>Every plot, every record</h2>
+      <p>Each plot within the 65.14 acres carries a separate 7/12 extract. Each link below opens the original document folder.</p>
+    </div>
+    <div class="extract-grid">
+      <div class="ext-col reveal">
+        <div class="hd"><div class="ac">7.73 Acres</div><div class="ds">Land 7/12 Extracts</div></div>
+        <ul>
+          <li><a href="https://drive.google.com/drive/folders/1ISwqU0w5A1RV15zHMkGnLhliIGnVpMk6?usp=sharing" target="_blank" rel="noopener">Land no. 37_1 &mdash; 7/12 <span class="open">Open</span></a></li>
+          <li><a href="https://drive.google.com/drive/folders/179V3w1_Pv1svQfp-Tnl28DYqaKo0S2F8?usp=sharing" target="_blank" rel="noopener">Land no. 37_2 &mdash; 7/12 <span class="open">Open</span></a></li>
+          <li><a href="https://drive.google.com/drive/folders/1PJOI8EKYMn9BeTWmWUrdcxD1HVxCMl9u?usp=sharing" target="_blank" rel="noopener">Land no. 78_4 &mdash; 7/12 <span class="open">Open</span></a></li>
+        </ul>
+      </div>
+      <div class="ext-col reveal">
+        <div class="hd"><div class="ac">34 Acres</div><div class="ds">Land 7/12 Extracts</div></div>
+        <ul>
+          <li><a href="https://drive.google.com/drive/folders/1sOwYki8Y6diBWSbz6c8Tvm6c9AeljFtT?usp=sharing" target="_blank" rel="noopener">Land no. 35 &mdash; 7/12 <span class="open">Open</span></a></li>
+          <li><a href="https://drive.google.com/drive/folders/1gcfsSwfHIJ2ZxfaSzhRPa35-Kn6rlf8y?usp=sharing" target="_blank" rel="noopener">Land no. 37 &mdash; 7/12 <span class="open">Open</span></a></li>
+          <li><a href="https://drive.google.com/drive/folders/1cTB065fKrrTIdPhS2F1PJzmLfW9tsPkc?usp=sharing" target="_blank" rel="noopener">Land no. 78 &mdash; 7/12 <span class="open">Open</span></a></li>
+        </ul>
+      </div>
+      <div class="ext-col reveal">
+        <div class="hd"><div class="ac">23.41 Acres</div><div class="ds">Land 7/12 Extracts</div></div>
+        <ul>
+          <li><a href="https://drive.google.com/drive/folders/1_55lQpNu5Kdaj_JaQM69iMDCY13VqmgR?usp=sharing" target="_blank" rel="noopener">Land no. 35 &mdash; 7/12 <span class="open">Open</span></a></li>
+          <li><a href="https://drive.google.com/drive/folders/1ttBorJMCGG5sNdnAkmalRW7NwyG0GzYG?usp=sharing" target="_blank" rel="noopener">Land no. 35 &mdash; 7/12 <span class="open">Open</span></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="legal-note reveal">
+      <div class="seal">&sect;</div>
+      <div>
+        <h3>Legal &amp; Title Search Report</h3>
+        <p>The land owners have <strong>100% clear and marketable title</strong> of the 42 acres of land; the balance is MOU-signed.</p>
+        <div class="ll">
+          <a class="btn btn-forest" href="https://drive.google.com/file/d/1l85xJZQhd27LCTGcQDS6W8fFLLbizs4e/view?usp=sharing" target="_blank" rel="noopener">Search Report <span class="ar">&rarr;</span></a>
+          <a class="btn btn-forest" href="https://drive.google.com/file/d/13Fn2t2KzwPZu4OBs5YbgqvRp8ohYD_SG/view?usp=sharing" target="_blank" rel="noopener">Latest Fer-Far Update <span class="ar">&rarr;</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ASSURANCE / encumbrance -->
+<section class="assure-sec pad" id="assurance">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">08 &middot; Confirmation &amp; Approvals</span>
+      <h2 style="color:#fff">Free, vacant &amp; approved</h2>
+    </div>
+    <div class="assure-grid">
+      <div class="assure reveal">
+        <h3>No <span>encumbrance</span></h3>
+        <p>We confirm the land under consideration is free from any encumbrance. (For reference, please refer to the Search Report.)</p>
+        <a class="lk" href="#extract">See Search Report</a>
+      </div>
+      <div class="assure reveal">
+        <h3>Vacant &amp; <span>no encroachment</span></h3>
+        <p>We confirm the entire project area and all plots under consideration are vacant and free from any encroachment.</p>
+        <a class="lk" href="#extract">See Search Report</a>
+      </div>
+      <div class="assure reveal">
+        <h3>Approved <span>plans</span></h3>
+        <p>The project has approval for the first 7.73 acres N.A. Order.</p>
+        <a class="lk" href="https://drive.google.com/file/d/1LPbLU-v-dyDPhT9pM2deOSgTklTJmz3A/view?usp=sharing" target="_blank" rel="noopener">View NA Order &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="contact">
+  <div class="cta-bg"><img src="assets/image2.jpg" alt="The Dapoli coastline at dusk" /></div>
+  <div class="wrap">
+    <span class="eyebrow">Thank You</span>
+    <h2>Own a piece of the <i>Konkan coast</i></h2>
+    <p>To arrange a site visit or request the complete legal dossier, we&rsquo;d be glad to assist.</p>
+    <div class="cta-btns">
+      <a class="btn btn-gold" href="https://maps.app.goo.gl/R71p5Qh2m9pV72qQ7" target="_blank" rel="noopener">Visit the Site <span class="ar">&rarr;</span></a>
+      <a class="btn btn-out" href="#index">Review the Dossier <span class="ar">&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="brand">Dapoli&nbsp;<b>65</b></div>
+      <p style="margin-top:14px;max-width:300px">A premium 65.14-acre freehold land parcel in Dapoli, Ratnagiri, Maharashtra &mdash; the Mahabaleshwar of Konkan.</p>
+    </div>
+    <div>
+      <h4>The Parcel</h4>
+      <a href="#about">About Dapoli</a><br>
+      <a href="#parcel">The Land Parcel</a><br>
+      <a href="#location">Location &amp; Co-ordinates</a><br>
+      <a href="#gallery">Site Images</a>
+    </div>
+    <div>
+      <h4>Records</h4>
+      <a href="#documents">Plot Layout</a><br>
+      <a href="#extract">7/12 Extracts</a><br>
+      <a href="#extract">Legal &amp; Title Report</a><br>
+      <a href="#assurance">Approvals</a>
+    </div>
+  </div>
+  <div class="footer-bot">
+    <span class="reg">Registration Doc No.: F 584725 / 26 / 27</span><br><br>
+    Land freehold &amp; owned by Mohammad Naeem Abdul Hamid Khan (50%), Narendra Doke (25%) &amp; Dayanand Vernekar (25%).
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lb"><span class="x" id="lbx">&times;</span><img id="lbimg" src="" alt="Enlarged site image" /></div>
+
+<script>
+  // nav scroll state
+  const nav=document.getElementById('nav');
+  addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>40));
+
+  // reveal on scroll
+  const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(i%4*70)+'ms';io.observe(el)});
+
+  // lightbox for gallery
+  const lb=document.getElementById('lb'),lbimg=document.getElementById('lbimg');
+  document.querySelectorAll('.gallery img').forEach(img=>{
+    img.addEventListener('click',()=>{lbimg.src=img.src;lb.classList.add('open')});
+  });
+  const close=()=>lb.classList.remove('open');
+  document.getElementById('lbx').addEventListener('click',close);
+  lb.addEventListener('click',e=>{if(e.target===lb)close()});
+  addEventListener('keydown',e=>{if(e.key==='Escape')close()});
+</script>
+</body>
+</html>
